@@ -1,0 +1,113 @@
+.weather-card{
+
+    max-width:450px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.weather-card img{
+
+    width:120px;
+
+}
+
+.weather-card h1{
+
+    font-size:60px;
+
+    color:#2196f3;
+
+    margin:10px 0;
+
+}
+
+.weather-card h2{
+
+    margin-bottom:10px;
+
+}
+
+.description{
+
+    text-transform:capitalize;
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+}
+
+.infos{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.infos div{
+
+    background:#f5f5f5;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+}
+
+
+.weather-card{
+
+    animation: apparition .7s ease;
+
+}
+
+@keyframes apparition{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+.weather-card{
+
+    transition:.3s;
+
+}
+
+.weather-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
