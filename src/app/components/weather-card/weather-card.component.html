@@ -1,0 +1,38 @@
+<div class="weather-card">
+
+    <h2>
+
+        📍 {{ weather.city }}, {{ weather.country }}
+
+    </h2>
+    <img
+        [src]="weather.icon"
+        [alt]="weather.description"
+    >
+
+    <h1>{{ weather.temperature }} °C</h1>
+
+    <p class="description">
+        {{ weather.description }}
+    </p>
+
+    <div class="infos">
+
+        <div>
+            🌡 Ressenti :
+            <strong>{{ weather.feelsLike }} °C</strong>
+        </div>
+
+        <div>
+            💧 Humidité :
+            <strong>{{ weather.humidity }} %</strong>
+        </div>
+
+        <div>
+            🌬 Vent :
+            <strong>{{ weather.windSpeed }} km/h</strong>
+        </div>
+
+    </div>
+
+</div>
